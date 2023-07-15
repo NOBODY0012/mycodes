@@ -1,1 +1,2 @@
-i lovr jhsiussc
+public class abc;
+
