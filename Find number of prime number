@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class findingprimenumber {
+
+	public static void main(String[] args) {
+		Scanner scn = new Scanner(System.in);
+
+		System.out.println("Enter any number to find prime number less than or equal to entered number");
+		int number = scn.nextInt();
+		int i;
+		int count = 0;
+		for (i = number; i >= 0; i--) {
+			int j;
+			for (j = 2; j <= i; j++) {
+				if (i % j == 0) {
+					break;
+				}
+			}
+			if (j == i) {
+				System.out.println(j +" is a prime number");
+				count++;
+			}
+		}
+		System.out.println("Total number of prime number less than equal to "+ number+" is :"+ count);
+	}
+
+}
