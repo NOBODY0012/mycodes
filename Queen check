@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class queen_attack {
+
+	public static void main(String[] args) {
+		Scanner scn = new Scanner(System.in);
+		System.out.println("Enter king coordinate");
+		int row = scn.nextInt();
+		int col = scn.nextInt();
+		System.out.println("Enter queen coordinate");
+		int row1 = scn.nextInt();
+		int col1 = scn.nextInt();
+		if (row == row1 || col == col1) {
+			System.out.println("1");
+
+		} else if (row == col && row1 == col1) {
+			System.out.println("1");
+		} else {
+			System.out.println("0");
+		}
+
+	}
+
+}
